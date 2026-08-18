@@ -1,0 +1,3 @@
+import { View, StyleSheet } from 'react-native';
+export function Donut({ color = '#FF7EAB' }: { color?: string }) { return <View style={[s.outer,{backgroundColor:color}]}><View style={s.glaze}/><View style={s.hole}/></View> }
+const s=StyleSheet.create({outer:{width:108,height:108,borderRadius:54,alignItems:'center',justifyContent:'center',shadowColor:'#000',shadowOpacity:.12,shadowRadius:8,shadowOffset:{width:0,height:4},elevation:4},glaze:{position:'absolute',top:12,left:14,right:8,height:24,borderRadius:18,backgroundColor:'#FFD4E3',opacity:.8,transform:[{rotate:'-8deg'}]},hole:{width:28,height:28,borderRadius:14,backgroundColor:'#FDEFF3',borderWidth:5,borderColor:'#F6C7D5'}});
